@@ -13,6 +13,7 @@ const SketchCanvas = ({
     if (imageBitmap) {
       processImage();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [imageBitmap, grayscale, blurAmount, contrast]);
 
   const applyFilter = (bmp, filters = "") => {
